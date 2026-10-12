@@ -78,3 +78,17 @@ a.app:hover{border-color:var(--acc);text-decoration:none}
 .field.top{align-items:flex-start}
 .card-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 .card-actions .send{margin:0}
+@media (max-width: 640px) {
+    .nav {
+        flex-wrap: nowrap;
+        gap: 10px;
+        white-space: nowrap;
+    }
+    .nav .logo {
+        margin-right: auto;   /* pushes the links to the right edge */
+        padding-right: 14px;  /* guaranteed gap between logo and first link */
+        flex: none;
+    }
+    .nav a { flex: none; }
+    .wrap { padding-left: 14px; padding-right: 14px; }
+}
