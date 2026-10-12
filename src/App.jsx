@@ -250,7 +250,7 @@ export default function App() {
             <nav className="nav">
                 <span className="logo">~/wills</span>
                 {[['experience', 'experience'], ['certifications', 'certs'], ['projects', 'projects'], ['photos', 'photos'], ['hire', 'hire.me']].map(([id, l]) =>
-                    <a key={id} href={`#${id}`}>{l}</a>)}
+                    <a style={{fontSize: "10px"}} key={id} href={`#${id}`}>{l}</a>)}
             </nav>
             <Intro g={g}/>
             <Experience/>
