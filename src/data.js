@@ -78,6 +78,14 @@ export const ogadrop = {
     ],
 }
 
+
+export const jollyWorld = {
+    name: 'jollyWorld',
+    url: 'https://jollyworld.vercel.app/',
+    tagline: 'Hotel booking and reservation website.',
+    stack: ['React.js', 'Vite', 'Node.js'],
+}
+
 export const certifications = [
     {
         title: 'Microsoft Certified: Azure Fundamentals',

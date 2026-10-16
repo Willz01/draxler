@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import {me, ascii, skills, experience, why, ogadrop, certifications} from './data.js'
+import {me, ascii, skills, experience, why, ogadrop, certifications, jollyWorld} from './data.js'
 
 const vscoUrl = `https://vsco.co/${me.vsco}`
 const j = url => fetch(url).then(r => {
@@ -85,9 +85,10 @@ function Experience() {
 
 function Projects() {
     const o = ogadrop
+    const j = jollyWorld
     return (
-        <section id="projects"><Cmd c="cat ogadrop.md"/>
-            <div className="box">
+        <section id="projects"><Cmd c="cat projects.md"/>
+            <div className="box" style={{marginBottom: '2rem'}}>
                 <div className="box-head">
                     <div>
                         <h3>{o.name}<span className="live"><i/> in-progress</span></h3>
@@ -115,6 +116,21 @@ function Projects() {
                     <span className="muted small">built with</span>
                     {o.stack.map(t => <span className="chip" key={t}>{t}</span>)}
                     <span className="muted small">· 3 apps</span>
+                </div>
+            </div>
+
+            <div className="box">
+                <div className="box-head">
+                    <div>
+                        <h3>{j.name}<span className="live"><i/> in-progress</span></h3>
+                        <p style={{fontSize: '12px'}} className="muted"> - {j.tagline}</p>
+                    </div>
+                    <a className="visit" href={j.url} target="_blank" rel="noreferrer">jollyworld.com ↗</a>
+                </div>
+                <div className="box-foot">
+                    <span className="muted small">built with</span>
+                    {j.stack.map(t => <span className="chip" key={t}>{t}</span>)}
+                    <span className="muted small">· 1 live site</span>
                 </div>
             </div>
         </section>
@@ -261,8 +277,10 @@ export default function App() {
             <Hire/>
             <footer className="muted small">
                 <span>© {new Date().getFullYear()} {me.fullName}</span>
-                <span><a target={"_blank"} href={`https://github.com/${me.github}`}>github</a> · <a target={"_blank"} href={me.linkedin}>linkedin</a> · <a
-                    target={"_blank"} href={vscoUrl}>vsco</a> · <a target={"_blank"} href={`mailto:${me.email}`}>email</a></span>
+                <span><a target={"_blank"} href={`https://github.com/${me.github}`}>github</a> · <a target={"_blank"}
+                                                                                                    href={me.linkedin}>linkedin</a> · <a
+                    target={"_blank"} href={vscoUrl}>vsco</a> · <a target={"_blank"}
+                                                                   href={`mailto:${me.email}`}>email</a></span>
             </footer>
         </div>
     )
