@@ -256,7 +256,7 @@ export default function App() {
         <Why/>
         <Hire/>
         <footer className="muted small">
-            <span>© {new Date().getFullYear()} {me.fullName}</span>
+            <span>© {new Date().getFullYear()}, {me.fullName} · All rights reserved.</span>
             <span><a target={"_blank"} href={`https://github.com/${me.github}`}>github</a> · <a target={"_blank"}
                                                                                                 href={me.linkedin}>linkedin</a> · <a
                 target={"_blank"} href={vscoUrl}>vsco</a> · <a target={"_blank"}
