@@ -7,7 +7,7 @@ export const me = {
     linkedin: 'https://www.linkedin.com/in/ekanem-wills-17we/',
     vsco: 'draxler606',
     email: 'ekanemwills1@gmail.com',
-    intro: "i like building the parts of software you don't see: apis, servers, and the plumbing that lets services talk to each other.\n" + "\n" + "day to day i work in java, python, node.js and javascript, flutter, with kotlin for android. i enjoy distributed communication and clean backends.\n" + "\n" + "away from the keyboard i take photos. you can see them in the photos tab.",
+    intro: "i like building the parts of software you don't see: apis, servers, and the plumbing that lets services talk to each other.\n" + "\n" + "day to day i work in java, python, node.js and javascript, flutter, with kotlin for android. i enjoy distributed communication and clean backends. I also enjoy building cool looking website with react and node.js, so contact me for those. \n" + "\n" + "away from the keyboard i take photos. you can see them in the photos section.",
     building: 'ogadrop',
     buildDesc: 'Shopping, transportation and logistics super app',
     buildingUrl: 'https://ogadrop.com',
