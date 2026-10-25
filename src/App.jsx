@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import {me, ascii, skills, experience, why, ogadrop, certifications, jollyWorld} from './data.js'
+import {me, ascii, skills, experience, why, ogadrop, certifications, jollyWorld, bookWithMe} from './data.js'
 
 const vscoUrl = `https://vsco.co/${me.vsco}`
 const j = url => fetch(url).then(r => {
@@ -86,6 +86,7 @@ function Experience() {
 function Projects() {
     const o = ogadrop
     const j = jollyWorld
+    const b = bookWithMe
     return (
         <section id="projects"><Cmd c="cat projects.md"/>
             <div className="box" style={{marginBottom: '2rem'}}>
@@ -119,17 +120,32 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="box">
+            <div className="box" style={{marginBottom: '2rem'}}>
                 <div className="box-head">
                     <div>
                         <h3>{j.name}<span className="live"><i/> in-progress</span></h3>
                         <p style={{fontSize: '12px'}} className="muted"> - {j.tagline}</p>
                     </div>
-                    <a className="visit" href={j.url} target="_blank" rel="noreferrer">jollyworld.com ↗</a>
+                    <a className="visit" href={j.url} target="_blank" rel="noreferrer">jollyworld.ng ↗</a>
                 </div>
                 <div className="box-foot">
                     <span className="muted small">built with</span>
                     {j.stack.map(t => <span className="chip" key={t}>{t}</span>)}
+                    <span className="muted small">· 1 live site</span>
+                </div>
+            </div>
+
+            <div className="box">
+                <div className="box-head">
+                    <div>
+                        <h3>{b.name}<span className="live"><i/> in-progress</span></h3>
+                        <p style={{fontSize: '12px'}} className="muted"> - {b.tagline}</p>
+                    </div>
+                    <a className="visit" href={j.url} target="_blank" rel="noreferrer">bookWithMe.ng ↗</a>
+                </div>
+                <div className="box-foot">
+                    <span className="muted small">built with</span>
+                    {b.stack.map(t => <span className="chip" key={t}>{t}</span>)}
                     <span className="muted small">· 1 live site</span>
                 </div>
             </div>
