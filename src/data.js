@@ -29,11 +29,11 @@ export const experience = [{
 }, {
     title: '[pandora] — junior software engineer · bloomreach engineer', dates: 'september 2022 – july 2023', sub: true,
 }, {
-    title: '[ecrf codeaid] — associate software engineer · software engineer',
+    title: '[ecrf codeaid] — associate software engineer',
     dates: 'september 2023 – august 2024',
     sub: true,
 }, {
-    title: '[ncp national car parks] — associate software engineer · backend engineer',
+    title: '[ncp national car parks] — associate backend engineer',
     dates: 'february 2024 – july 2025',
     sub: true,
 },]
