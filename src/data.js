@@ -38,7 +38,7 @@ export const experience = [{
     sub: true,
 },]
 
-export const why = ['i care about the parts of software you do not see: apis, servers and the communication between services.', 'i have shipped a backend and api that real clients (web and android) talk to, in a team.', 'i like learning properly: i read the docs, build the thing, then clean it up. I love what i do.', 'i enjoy working with people, and i write docs so others can follow & flow properly.',]
+export const why = ['i care about the parts of software you do not see: apis, servers and the communication between services.', 'i have shipped a backends and api´s that real clients (web and android) talk to, in a team.', 'i like learning properly: i read the docs, build the thing, then clean it up. I love what i do.', 'i enjoy working with people, and i write docs so others can follow & flow properly.',]
 
 export const ogadrop = {
     name: 'ogadrop',
